@@ -5,7 +5,7 @@ on:
     branches: [master]
 
 env:
-  DOCKER_HUB_USERNAME: gaffar0411
+  DOCKER_HUB_USERNAME: gaffar
   GCP_PROJECT_NAME: k8s-0727-gabdul
   K8S_CLUSTER_NAME: pal-for-devs-k8s
 
