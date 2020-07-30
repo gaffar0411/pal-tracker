@@ -20,17 +20,17 @@ public class InMemoryTimeEntryRepository implements TimeEntryRepository {
         return map.get(timeEntry.getId());
     }
 
-    public TimeEntry find(long timeEntryId){
+    public TimeEntry find(Long timeEntryId){
         return map.get(timeEntryId);
     }
 
-    public TimeEntry update(long id, TimeEntry timeEntry){
+    public TimeEntry update(Long id, TimeEntry timeEntry){
         timeEntry.setId(id);
         map.replace(id, timeEntry);
         return map.get(id);
     }
 
-    public void delete(long id) {
+    public void delete(Long id) {
 
         map.remove(id);
     }
